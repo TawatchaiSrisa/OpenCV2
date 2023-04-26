@@ -1,0 +1,8 @@
+# ทดสอบอ่านภาพจากไฟล ์00  
+import cv2 as cv   
+
+print("cv2 version. ",cv.__version__) 
+img = cv.imread('Lisa.jpg') 
+cv.imshow("Lisa",img) 
+
+cv.waitKey(0) 
