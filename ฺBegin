@@ -1,8 +1,14 @@
 # ทดสอบอ่านภาพจากไฟล ์00  
-import cv2 as cv   
+import cv2 as cv                    
 
-print("cv2 version. ",cv.__version__) 
+#print เวอร์ชันของ OpenCV
+print("cv2 version. ",cv.__version__)  
+
+#รับภาพเข้ามาจากไฟล์ภาพ
 img = cv.imread('Lisa.jpg') 
+
+#โชว์ภาพ
 cv.imshow("Lisa",img) 
 
+#ร
 cv.waitKey(0) 
