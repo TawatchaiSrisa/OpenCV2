@@ -10,5 +10,5 @@ img = cv.imread('Lisa.jpg')
 #โชว์ภาพ
 cv.imshow("Lisa",img) 
 
-#ร
+#รอการกดแป้นพิมพ์
 cv.waitKey(0) 
