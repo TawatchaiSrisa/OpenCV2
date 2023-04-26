@@ -1,0 +1,19 @@
+#print เวอร์ชันของ openCV 
+print("cv2 version.",cv.__version__)  
+
+#รับวีดีโอเข้ามาจากไฟล์ mp4
+capture = cv.VideoCapture('Lisa.mp4') 
+
+#ทำงานวนเพื่อแสดงวีดีโอทีละช็อต
+while True : 
+    #อ่านภาพเข้ามาที่ละเฟลม
+    _,frame = capture.read()
+    #แสดงผลภาพทีละเฟลม 
+    cv.imshow('Lisa',frame)
+    #หน่วงเวลา 20mS และรอการกด q เพื่อหยุดการทำงานในลูป 
+    if cv.waitKey(20) & 0xff == ord('q') : 
+        break 
+    
+#คืนหน่วยความจำที่เรียกใช้งงาน   
+capture.release() 
+cv.destroyAllWindows()  
