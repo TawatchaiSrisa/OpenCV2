@@ -2,7 +2,7 @@
 print("cv2 version.",cv.__version__)  
 
 #รับวีดีโอเข้ามาจากกล้อง
-capture = cv.VideoCapture('Lisa.mp4') 
+capture = cv.VideoCapture(0) 
 
 #ทำงานวนเพื่อแสดงวีดีโอทีละช็อต
 while True : 
